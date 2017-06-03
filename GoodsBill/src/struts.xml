@@ -3,5 +3,8 @@
 <struts>
 	<package name="default" namespace="/" extends="struts-default">
 	     <!-- type="redirectAction" -->
+	     <action name="show" class="goodsAction" method="show">
+	       <result name="success">list.jsp</result>
+	     </action>
 	  </package>
 </struts>    

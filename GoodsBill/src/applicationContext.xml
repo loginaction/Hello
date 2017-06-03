@@ -94,4 +94,9 @@
 	<bean id="goodsService" class="com.jbit.service.impl.GoodsServiceImpl">
 	  <property name="dao" ref="goodsDao"></property>
 	</bean>
+	 
+	<bean id="goodsAction" class="com.jbit.action.GoodsAction">
+	  <property name="service" ref="goodsService"></property>
+	</bean>
+	
 </beans>
